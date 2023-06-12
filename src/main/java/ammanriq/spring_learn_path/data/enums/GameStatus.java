@@ -1,4 +1,4 @@
-package ammanriq.spring_learn_path.enums;
+package ammanriq.spring_learn_path.data.enums;
 
 public enum GameStatus {
     SCHEDULED("Scheduled"),

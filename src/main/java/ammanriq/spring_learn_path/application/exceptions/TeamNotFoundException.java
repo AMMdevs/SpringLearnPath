@@ -1,4 +1,4 @@
-package ammanriq.spring_learn_path.exceptions;
+package ammanriq.spring_learn_path.application.exceptions;
 
 import java.util.UUID;
 

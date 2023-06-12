@@ -1,6 +1,6 @@
-package ammanriq.spring_learn_path.entities;
+package ammanriq.spring_learn_path.data.entities;
 
-import ammanriq.spring_learn_path.enums.GameStatus;
+import ammanriq.spring_learn_path.data.enums.GameStatus;
 
 import java.util.Objects;
 import java.util.UUID;

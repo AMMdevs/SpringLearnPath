@@ -1,6 +1,6 @@
-package ammanriq.spring_learn_path.entities;
+package ammanriq.spring_learn_path.data.entities;
 
-import ammanriq.spring_learn_path.enums.Position;
+import ammanriq.spring_learn_path.data.enums.Position;
 
 import java.util.UUID;
 
@@ -39,6 +39,9 @@ public class Player {
         this.number = number;
     }
 
+    public Position getPosition() {
+        return position;
+    }
     public void setPosition(Position position) {
         this.position = position;
     }
@@ -50,4 +53,6 @@ public class Player {
     public void setTeam(Team team) {
         this.team = team;
     }
+
+
 }

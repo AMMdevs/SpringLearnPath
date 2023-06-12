@@ -1,4 +1,4 @@
-package ammanriq.spring_learn_path.entities;
+package ammanriq.spring_learn_path.data.entities;
 
 import java.util.UUID;
 

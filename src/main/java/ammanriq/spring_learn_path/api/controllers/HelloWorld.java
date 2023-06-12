@@ -1,4 +1,4 @@
-package ammanriq.spring_learn_path.controllers;
+package ammanriq.spring_learn_path.api.controllers;
 
 import org.springframework.web.bind.annotation.*;
 

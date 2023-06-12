@@ -1,7 +1,7 @@
-package ammanriq.spring_learn_path.entities;
+package ammanriq.spring_learn_path.data.entities;
 
 
-import ammanriq.spring_learn_path.enums.Result;
+import ammanriq.spring_learn_path.data.enums.Result;
 
 import java.util.HashMap;
 import java.util.Objects;
@@ -16,7 +16,7 @@ public class Team {
 
     private int points;
     //private Result result;
-    private HashMap<UUID, Enum> resultsTable;
+    private HashMap<UUID, Result> resultsTable;
 
     public Team(String name, String city) {
         this.id = UUID.randomUUID();
@@ -67,7 +67,7 @@ public class Team {
         this.points = points;
     }
 
-    public HashMap<UUID, Enum> getResultsTable() {
+    public HashMap<UUID, Result> getResultsTable() {
         return resultsTable;
     }
 
