@@ -1,11 +1,8 @@
 package ammanriq.spring_learn_path.api.controllers;
 
 import ammanriq.spring_learn_path.application.dtos.CreatePlayerCommand;
-import ammanriq.spring_learn_path.application.dtos.CreateTeamCommand;
 import ammanriq.spring_learn_path.application.services.PlayerService;
-import ammanriq.spring_learn_path.application.services.TeamService;
 import ammanriq.spring_learn_path.data.entities.Player;
-import ammanriq.spring_learn_path.data.entities.Team;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
@@ -36,7 +33,7 @@ public class PlayersController {
         }
     }
 
-    @GetMapping ("/{id}")
+    @GetMapping("/{id}")
     public ResponseEntity<Player> getPlayerById(@PathVariable UUID id) {
         try {
             playerService.getPlayerById(id);

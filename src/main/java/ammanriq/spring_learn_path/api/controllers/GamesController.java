@@ -1,16 +1,11 @@
 package ammanriq.spring_learn_path.api.controllers;
 
-import ammanriq.spring_learn_path.application.dtos.*;
-import ammanriq.spring_learn_path.application.exceptions.TeamNotFoundException;
+import ammanriq.spring_learn_path.application.dtos.CreateGameCommand;
 import ammanriq.spring_learn_path.application.services.GameService;
 import ammanriq.spring_learn_path.data.entities.Game;
-import ammanriq.spring_learn_path.data.entities.TeamGame;
-import ammanriq.spring_learn_path.data.enums.GameStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
-import java.util.Collections;
-import java.util.List;
 import java.util.UUID;
 
 @RestController
@@ -53,6 +48,7 @@ public class GamesController {
                     .build();
         }
     }
+
     @GetMapping("/{id}")
     public ResponseEntity<Game> getGameById(@PathVariable UUID id) {
         try {
@@ -68,6 +64,7 @@ public class GamesController {
                     .build();
         }
     }
+
     @GetMapping("/teams/{id}")
     public ResponseEntity<Game> getGamesByTeamId(@PathVariable UUID id) {
         try {
@@ -149,7 +146,7 @@ public class GamesController {
     }
 
     @GetMapping("/{id}/score")
-    public ResponseEntity<String> getScoreGame(@PathVariable UUID id){
+    public ResponseEntity<String> getScoreGame(@PathVariable UUID id) {
         try {
             gameService.getScoreGame(id);
 
@@ -165,7 +162,7 @@ public class GamesController {
     }
 
     @PutMapping("/{id}/end")
-    public ResponseEntity<Void> endGame(@PathVariable UUID id){
+    public ResponseEntity<Void> endGame(@PathVariable UUID id) {
         try {
             gameService.endGame(id);
 
@@ -182,7 +179,7 @@ public class GamesController {
     }
 
     @GetMapping("/{id}/end")
-    public ResponseEntity<String> resultsHistory (@PathVariable UUID id) {
+    public ResponseEntity<String> resultsHistory(@PathVariable UUID id) {
         try {
             gameService.resultsHistory(id);
 

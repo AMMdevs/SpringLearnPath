@@ -1,4 +1,4 @@
-package ammanriq.spring_learn_path.config;
+package ammanriq.spring_learn_path.api.config;
 
 import io.swagger.v3.oas.models.OpenAPI;
 import io.swagger.v3.oas.models.info.Info;

@@ -5,12 +5,10 @@ import ammanriq.spring_learn_path.data.entities.Player;
 import ammanriq.spring_learn_path.data.entities.Team;
 import ammanriq.spring_learn_path.data.entities.TeamGame;
 import ammanriq.spring_learn_path.data.enums.Position;
-import org.springframework.stereotype.Component;
 
 import java.util.HashMap;
 import java.util.UUID;
 
-@Component
 public class ApplicationDatabase {
     public final HashMap<UUID, Game> gamesTable = new HashMap<>();
     public final HashMap<UUID, Team> teamsTable = new HashMap<>();
